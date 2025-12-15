@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "GitHub PR: Split Diff & Hide Whitespace",
+  "version": "1.0.3",
+  "description": "Automatically enforces diff=split & w=1 on GitHub pull request diff pages (/files and /changes).",
+  "permissions": ["webNavigation", "tabs", "*://github.com/*"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "github-pr-split-whitespace@yousefm",
+      "strict_min_version": "78.0"
+    }
+  }
+}
